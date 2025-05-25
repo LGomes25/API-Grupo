@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "f4813024-5193-44af-9b78-52b3991f0f1a",
+		"name": "grupoT4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44822458",
+		"_collection_link": "https://lgomes-8289.postman.co/workspace/Residencia-API~9edd5a9f-9072-4e23-8b04-9a6e63f9659b/collection/44822458-f4813024-5193-44af-9b78-52b3991f0f1a?action=share&source=collection_link&creator=44822458"
+	},
+	"item": [
+		{
+			"name": "Conta Listar All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/lancamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lancamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta Listar Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/lancamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lancamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta Inserir 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorVenda\": 7500.00,\r\n  \"nomeVendedor\": \"xxx\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lancamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lancamentos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
