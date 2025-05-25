@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "6f8a41d0-7870-443c-b2c9-1162d1a438ab",
+		"name": "grupoT3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44822458",
+		"_collection_link": "https://lgomes-8289.postman.co/workspace/Residencia-API~9edd5a9f-9072-4e23-8b04-9a6e63f9659b/collection/44822458-6f8a41d0-7870-443c-b2c9-1162d1a438ab?action=share&source=collection_link&creator=44822458"
+	},
+	"item": [
+		{
+			"name": "Conta Listar All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Roni\",\r\n    \"email\":\"roni@gmail.com\",\r\n    \"senha\":\"123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/conta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Conta Inserir 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numeroConta\": \"456\",\r\n  \"nomeTitular\": \"Marina Orleans\",\r\n  \"cpf\": \"109.500.390-98\",\r\n  \"saldo\": 5000.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/conta/inserir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conta",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao Listar All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/transacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transacao inserir 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valor\": 1000.00,\r\n  \"contaOrigem\": {\r\n    \"id\": 2\r\n  },\r\n  \"contaDestino\": {\r\n    \"id\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transacao"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
