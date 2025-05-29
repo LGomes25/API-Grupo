@@ -1,0 +1,717 @@
+{
+	"info": {
+		"_postman_id": "c3f27e6f-cceb-4bea-9345-30d1eb8f3631",
+		"name": "grupoT1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44822458",
+		"_collection_link": "https://lgomes-8289.postman.co/workspace/Residencia-API~9edd5a9f-9072-4e23-8b04-9a6e63f9659b/collection/44822458-c3f27e6f-cceb-4bea-9345-30d1eb8f3631?action=share&source=collection_link&creator=44822458"
+	},
+	"item": [
+		{
+			"name": "Estado Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/estados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estado Listar Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/estados/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estados",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estado Cadastrar Lote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  { \"nome\": \"Acre\", \"sigla\": \"AC\" },\r\n  { \"nome\": \"Alagoas\", \"sigla\": \"AL\" },\r\n  { \"nome\": \"Amapá\", \"sigla\": \"AP\" },\r\n  { \"nome\": \"Amazonas\", \"sigla\": \"AM\" },\r\n  { \"nome\": \"Bahia\", \"sigla\": \"BA\" },\r\n  { \"nome\": \"Ceará\", \"sigla\": \"CE\" },\r\n  { \"nome\": \"Distrito Federal\", \"sigla\": \"DF\" },\r\n  { \"nome\": \"Espírito Santo\", \"sigla\": \"ES\" },\r\n  { \"nome\": \"Goiás\", \"sigla\": \"GO\" },\r\n  { \"nome\": \"Maranhão\", \"sigla\": \"MA\" },\r\n  { \"nome\": \"Mato Grosso\", \"sigla\": \"MT\" },\r\n  { \"nome\": \"Mato Grosso do Sul\", \"sigla\": \"MS\" },\r\n  { \"nome\": \"Minas Gerais\", \"sigla\": \"MG\" },\r\n  { \"nome\": \"Pará\", \"sigla\": \"PA\" },\r\n  { \"nome\": \"Paraíba\", \"sigla\": \"PB\" },\r\n  { \"nome\": \"Paraná\", \"sigla\": \"PR\" },\r\n  { \"nome\": \"Pernambuco\", \"sigla\": \"PE\" },\r\n  { \"nome\": \"Piauí\", \"sigla\": \"PI\" },\r\n  { \"nome\": \"Rio de Janeiro\", \"sigla\": \"RJ\" },\r\n  { \"nome\": \"Rio Grande do Norte\", \"sigla\": \"RN\" },\r\n  { \"nome\": \"Rio Grande do Sul\", \"sigla\": \"RS\" },\r\n  { \"nome\": \"Rondônia\", \"sigla\": \"RO\" },\r\n  { \"nome\": \"Roraima\", \"sigla\": \"RR\" },\r\n  { \"nome\": \"Santa Catarina\", \"sigla\": \"SC\" },\r\n  { \"nome\": \"São Paulo\", \"sigla\": \"SP\" },\r\n  { \"nome\": \"Sergipe\", \"sigla\": \"SE\" },\r\n  { \"nome\": \"Tocantins\", \"sigla\": \"TO\" }\r\n]\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/estados/lote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estados",
+						"lote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cidade Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  { \"nome\": \"Acre\", \"sigla\": \"AC\" },\r\n  { \"nome\": \"Alagoas\", \"sigla\": \"AL\" },\r\n  { \"nome\": \"Amapá\", \"sigla\": \"AP\" },\r\n  { \"nome\": \"Amazonas\", \"sigla\": \"AM\" },\r\n  { \"nome\": \"Bahia\", \"sigla\": \"BA\" },\r\n  { \"nome\": \"Ceará\", \"sigla\": \"CE\" },\r\n  { \"nome\": \"Distrito Federal\", \"sigla\": \"DF\" },\r\n  { \"nome\": \"Espírito Santo\", \"sigla\": \"ES\" },\r\n  { \"nome\": \"Goiás\", \"sigla\": \"GO\" },\r\n  { \"nome\": \"Maranhão\", \"sigla\": \"MA\" },\r\n  { \"nome\": \"Mato Grosso\", \"sigla\": \"MT\" },\r\n  { \"nome\": \"Mato Grosso do Sul\", \"sigla\": \"MS\" },\r\n  { \"nome\": \"Minas Gerais\", \"sigla\": \"MG\" },\r\n  { \"nome\": \"Pará\", \"sigla\": \"PA\" },\r\n  { \"nome\": \"Paraíba\", \"sigla\": \"PB\" },\r\n  { \"nome\": \"Paraná\", \"sigla\": \"PR\" },\r\n  { \"nome\": \"Pernambuco\", \"sigla\": \"PE\" },\r\n  { \"nome\": \"Piauí\", \"sigla\": \"PI\" },\r\n  { \"nome\": \"Rio de Janeiro\", \"sigla\": \"RJ\" },\r\n  { \"nome\": \"Rio Grande do Norte\", \"sigla\": \"RN\" },\r\n  { \"nome\": \"Rio Grande do Sul\", \"sigla\": \"RS\" },\r\n  { \"nome\": \"Rondônia\", \"sigla\": \"RO\" },\r\n  { \"nome\": \"Roraima\", \"sigla\": \"RR\" },\r\n  { \"nome\": \"Santa Catarina\", \"sigla\": \"SC\" },\r\n  { \"nome\": \"São Paulo\", \"sigla\": \"SP\" },\r\n  { \"nome\": \"Sergipe\", \"sigla\": \"SE\" },\r\n  { \"nome\": \"Tocantins\", \"sigla\": \"TO\" }\r\n]\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cidades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cidade Listar Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  { \"nome\": \"Acre\", \"sigla\": \"AC\" },\r\n  { \"nome\": \"Alagoas\", \"sigla\": \"AL\" },\r\n  { \"nome\": \"Amapá\", \"sigla\": \"AP\" },\r\n  { \"nome\": \"Amazonas\", \"sigla\": \"AM\" },\r\n  { \"nome\": \"Bahia\", \"sigla\": \"BA\" },\r\n  { \"nome\": \"Ceará\", \"sigla\": \"CE\" },\r\n  { \"nome\": \"Distrito Federal\", \"sigla\": \"DF\" },\r\n  { \"nome\": \"Espírito Santo\", \"sigla\": \"ES\" },\r\n  { \"nome\": \"Goiás\", \"sigla\": \"GO\" },\r\n  { \"nome\": \"Maranhão\", \"sigla\": \"MA\" },\r\n  { \"nome\": \"Mato Grosso\", \"sigla\": \"MT\" },\r\n  { \"nome\": \"Mato Grosso do Sul\", \"sigla\": \"MS\" },\r\n  { \"nome\": \"Minas Gerais\", \"sigla\": \"MG\" },\r\n  { \"nome\": \"Pará\", \"sigla\": \"PA\" },\r\n  { \"nome\": \"Paraíba\", \"sigla\": \"PB\" },\r\n  { \"nome\": \"Paraná\", \"sigla\": \"PR\" },\r\n  { \"nome\": \"Pernambuco\", \"sigla\": \"PE\" },\r\n  { \"nome\": \"Piauí\", \"sigla\": \"PI\" },\r\n  { \"nome\": \"Rio de Janeiro\", \"sigla\": \"RJ\" },\r\n  { \"nome\": \"Rio Grande do Norte\", \"sigla\": \"RN\" },\r\n  { \"nome\": \"Rio Grande do Sul\", \"sigla\": \"RS\" },\r\n  { \"nome\": \"Rondônia\", \"sigla\": \"RO\" },\r\n  { \"nome\": \"Roraima\", \"sigla\": \"RR\" },\r\n  { \"nome\": \"Santa Catarina\", \"sigla\": \"SC\" },\r\n  { \"nome\": \"São Paulo\", \"sigla\": \"SP\" },\r\n  { \"nome\": \"Sergipe\", \"sigla\": \"SE\" },\r\n  { \"nome\": \"Tocantins\", \"sigla\": \"TO\" }\r\n]\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cidades/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cidades",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cidade Cadastrar 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Pindamonhangaba\",\r\n  \"estado\": {\r\n    \"id\": 25\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cidades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cidade Cadastrar Lote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"nome\": \"Petrópolis\",\r\n    \"estado\": {\r\n      \"id\": 19\r\n    }\r\n  },\r\n  {\r\n    \"nome\": \"Teresópolis\",\r\n    \"estado\": {\r\n      \"id\": 19\r\n    }\r\n  },\r\n  {\r\n    \"nome\": \"Nova Friburgo\",\r\n    \"estado\": {\r\n      \"id\": 19\r\n    }\r\n  },\r\n  {\r\n    \"nome\": \"Bom Jardim\",\r\n    \"estado\": {\r\n      \"id\": 19\r\n    }\r\n  },\r\n  {\r\n    \"nome\": \"São José do Vale do Rio Preto\",\r\n    \"estado\": {\r\n      \"id\": 19\r\n    }\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cidades/lote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cidades",
+						"lote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Listar Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Cadastrar 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Maria da Silva\",\r\n  \"cpf\": \"123.456.789-09\",\r\n  \"email\": \"maria.silva@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Cadastrar Lote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"nome\": \"João da Silva\",\r\n    \"cpf\": \"370.627.710-74\",\r\n    \"email\": \"joao.silva@example.com\"\r\n  },\r\n  {\r\n    \"nome\": \"Ana Pereira\",\r\n    \"cpf\": \"644.561.700-00\",\r\n    \"email\": \"ana.pereira@example.com\"\r\n  },\r\n  {\r\n    \"nome\": \"Carlos Souza\",\r\n    \"cpf\": \"021.024.300-73\",\r\n    \"email\": \"carlos.souza@example.com\"\r\n  },\r\n  {\r\n    \"nome\": \"Fernanda Lima\",\r\n    \"cpf\": \"837.174.450-14\",\r\n    \"email\": \"fernanda.lima@example.com\"\r\n  }\r\n]\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/lote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"lote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Atualizar Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João Souza\",\r\n    \"cpf\": \"370.627.710-74\",\r\n    \"email\": \"joao.silva@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Excluir Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endereco Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rua\": \"Rua Alfredo Pachá\",\r\n  \"numero\": \"123\",\r\n  \"complemento\": \"Apartamento 45\",\r\n  \"bairro\": \"Centro\",\r\n  \"cliente\": {\r\n    \"id\": 1\r\n  },\r\n  \"cidade\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enderecos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enderecos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endereco Listar Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rua\": \"Rua Alfredo Pachá\",\r\n  \"numero\": \"123\",\r\n  \"complemento\": \"Apartamento 45\",\r\n  \"bairro\": \"Centro\",\r\n  \"cliente\": {\r\n    \"id\": 1\r\n  },\r\n  \"cidade\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enderecos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enderecos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endereco Cadastrar 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rua\": \"Rua Alfredo Pachá\",\r\n  \"numero\": \"123\",\r\n  \"complemento\": \"Apartamento 45\",\r\n  \"bairro\": \"Centro\",\r\n  \"cliente\": {\r\n    \"id\": 1\r\n  },\r\n  \"cidade\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enderecos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enderecos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endereco Cadastrar Lote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"rua\": \"Rua Teresa\",\r\n    \"numero\": \"50\",\r\n    \"complemento\": \"\",\r\n    \"bairro\": \"Itaipava\",\r\n    \"cliente\": {\r\n      \"id\": 2\r\n    },\r\n    \"cidade\": {\r\n      \"id\": 1\r\n    }\r\n  },\r\n  {\r\n    \"rua\": \"Avenida Brasil\",\r\n    \"numero\": \"200\",\r\n    \"complemento\": \"Casa 2\",\r\n    \"bairro\": \"Centro\",\r\n    \"cliente\": {\r\n      \"id\": 3\r\n    },\r\n    \"cidade\": {\r\n      \"id\": 8\r\n    }\r\n  },\r\n  {\r\n    \"rua\": \"Rua Augusto Severo\",\r\n    \"numero\": \"78\",\r\n    \"complemento\": \"Fundos\",\r\n    \"bairro\": \"Várzea\",\r\n    \"cliente\": {\r\n      \"id\": 4\r\n    },\r\n    \"cidade\": {\r\n      \"id\": 2\r\n    }\r\n  },\r\n  {\r\n    \"rua\": \"Avenida Paulista\",\r\n    \"numero\": \"1500\",\r\n    \"complemento\": \"Conjunto 1001\",\r\n    \"bairro\": \"Bela Vista\",\r\n    \"cliente\": {\r\n      \"id\": 5\r\n    },\r\n    \"cidade\": {\r\n      \"id\": 6\r\n    }\r\n  }\r\n]\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enderecos/lote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enderecos",
+						"lote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endereco Atualizar Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rua\": \"Rua Alfredo Pachá\",\r\n  \"numero\": \"50\",\r\n  \"complemento\": \"Apartamento 45\",\r\n  \"bairro\": \"Centro\",\r\n  \"cliente\": {\r\n    \"id\": 1\r\n  },\r\n  \"cidade\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enderecos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enderecos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endereco Excluir Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rua\": \"Rua Alfredo Pachá\",\r\n  \"numero\": \"50\",\r\n  \"complemento\": \"Apartamento 45\",\r\n  \"bairro\": \"Centro\",\r\n  \"cliente\": {\r\n    \"id\": 1\r\n  },\r\n  \"cidade\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/enderecos/99",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enderecos",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Listar Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Cadastrar 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-20\",\r\n  \"horaPedido\": \"10:15:00\",\r\n  \"dataEntrega\": \"2025-05-24\",\r\n  \"status\": \"SEPARACAO\",\r\n  \"cliente\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Cadastrar Lote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"dataPedido\": \"2025-05-18\",\r\n    \"horaPedido\": \"09:15:00\",\r\n    \"dataEntrega\": \"2025-05-22\",\r\n    \"status\": \"PROCESSAMENTO\",\r\n    \"cliente\": { \"id\": 1 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-19\",\r\n    \"horaPedido\": \"10:30:00\",\r\n    \"dataEntrega\": \"2025-05-23\",\r\n    \"status\": \"SEPARACAO\",\r\n    \"cliente\": { \"id\": 1 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-20\",\r\n    \"horaPedido\": \"11:00:00\",\r\n    \"dataEntrega\": \"2025-05-25\",\r\n    \"status\": \"ROTA\",\r\n    \"cliente\": { \"id\": 1 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-21\",\r\n    \"horaPedido\": \"08:45:00\",\r\n    \"dataEntrega\": \"2025-05-26\",\r\n    \"status\": \"ENTREGUE\",\r\n    \"cliente\": { \"id\": 1 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-19\",\r\n    \"horaPedido\": \"14:00:00\",\r\n    \"dataEntrega\": \"2025-05-24\",\r\n    \"status\": \"PROCESSAMENTO\",\r\n    \"cliente\": { \"id\": 2 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-20\",\r\n    \"horaPedido\": \"13:30:00\",\r\n    \"dataEntrega\": \"2025-05-25\",\r\n    \"status\": \"SEPARACAO\",\r\n    \"cliente\": { \"id\": 3 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-20\",\r\n    \"horaPedido\": \"15:00:00\",\r\n    \"dataEntrega\": \"2025-05-26\",\r\n    \"status\": \"TRANSFERENCIA\",\r\n    \"cliente\": { \"id\": 4 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-21\",\r\n    \"horaPedido\": \"10:45:00\",\r\n    \"dataEntrega\": \"2025-05-27\",\r\n    \"status\": \"ROTA\",\r\n    \"cliente\": { \"id\": 5 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-22\",\r\n    \"horaPedido\": \"09:30:00\",\r\n    \"dataEntrega\": \"2025-05-28\",\r\n    \"status\": \"ENTREGUE\",\r\n    \"cliente\": { \"id\": 2 }\r\n  },\r\n  {\r\n    \"dataPedido\": \"2025-05-23\",\r\n    \"horaPedido\": \"16:15:00\",\r\n    \"dataEntrega\": \"2025-05-30\",\r\n    \"status\": \"TRANSFERENCIA\",\r\n    \"cliente\": { \"id\": 3 }\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos/lote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos",
+						"lote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Atualizar Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"ENTREGUE\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedido Excluir Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dataPedido\": \"2025-05-19\",\r\n  \"horaPedido\": \"14:30\",\r\n  \"dataEntrega\": \"2025-05-21\",\r\n  \"status\": \"PROCESSAMENTO\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

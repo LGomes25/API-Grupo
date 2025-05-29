@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "3b9d0cc1-ab38-4626-860f-2980b6de4a20",
+		"name": "Aula00-extra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44822458",
+		"_collection_link": "https://lgomes-8289.postman.co/workspace/Residencia-API~9edd5a9f-9072-4e23-8b04-9a6e63f9659b/collection/44822458-3b9d0cc1-ab38-4626-860f-2980b6de4a20?action=share&source=collection_link&creator=44822458"
+	},
+	"item": [
+		{
+			"name": "Consulta Listar todas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Listar Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dataConsulta\":\"2025-05-22\",\r\n    \"idPaciente\":3,\r\n    \"idMedico\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/consultas/inserir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"consultas",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
